@@ -14,7 +14,7 @@ const CLAIM_URL = "https://giftclick.org/aff_c?offer_id=4512&aff_id=148566";
 const steps = [
   "Check your savings eligibility",
   "Complete 4–5 sponsored deals",
-  "Claim up to $500 in Burger King savings",
+  "Claim up to $100 in Burger King savings",
 ];
 
 const faqs = [
@@ -24,7 +24,7 @@ const faqs = [
   },
   {
     q: "How much can I save?",
-    a: "You can unlock up to $500 in savings, depending on your eligibility and completed deals.",
+    a: "You can unlock up to $100 in savings, depending on your eligibility and completed deals.",
   },
   {
     q: "What are sponsored deals?",
@@ -39,22 +39,22 @@ const faqs = [
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "$500 Burger King Savings Offer" },
+      { title: "$100 Burger King Savings Offer" },
       {
         name: "description",
-        content: "Check your eligibility and claim up to $500 in Burger King savings.",
+        content: "Check your eligibility and claim up to $100 in Burger King savings.",
       },
-      { property: "og:title", content: "$500 Burger King Savings Offer" },
+      { property: "og:title", content: "$100 Burger King Savings Offer" },
       {
         property: "og:description",
-        content: "Check your eligibility and claim up to $500 in Burger King savings.",
+        content: "Check your eligibility and claim up to $100 in Burger King savings.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
-      { name: "twitter:title", content: "$500 Burger King Savings Offer" },
+      { name: "twitter:title", content: "$100 Burger King Savings Offer" },
       {
         name: "twitter:description",
-        content: "Check your eligibility and claim up to $500 in Burger King savings.",
+        content: "Check your eligibility and claim up to $100 in Burger King savings.",
       },
     ],
   }),
@@ -90,8 +90,8 @@ function FaqItem({ q, a }: { q: string; a: string }) {
 function Index() {
   return (
     <div className="min-h-screen bg-background">
-      <div className="border-b border-brand-dark bg-brand-dark px-4 py-3 text-center text-[12px] font-bold uppercase tracking-widest text-background">
-        BURGER KING SAVINGS · LIMITED-TIME OFFER · UP TO $500
+      <div className="border-b border-brand-dark bg-brand-blue px-4 py-3 text-center text-[12px] font-bold uppercase tracking-widest text-brand-cream">
+        BURGER KING SAVINGS · LIMITED-TIME OFFER · UP TO $100
       </div>
       <main>
         <section className="border-b border-border px-5 py-10 sm:py-16" aria-labelledby="page-title">
@@ -103,7 +103,7 @@ function Index() {
               width={176}
               height={176}
             />
-            <p className="mt-8 inline-flex items-center gap-2 text-[11px] font-bold uppercase tracking-[0.16em] text-brand-red">
+            <p className="mt-8 inline-flex items-center gap-2 text-[11px] font-bold uppercase tracking-[0.16em] text-brand-blue">
               <CheckCircle className="h-4 w-4" aria-hidden="true" /> Burger King
               savings offer
             </p>
@@ -111,7 +111,7 @@ function Index() {
               id="page-title"
               className="mt-3 max-w-[760px] font-display text-[48px] font-extrabold leading-[1.05] text-foreground sm:text-[68px]"
             >
-              Save up to <span className="text-brand-red">$500</span>
+              Save up to <span className="text-brand-red">$100</span>
             </h1>
             <p className="mt-5 max-w-[600px] text-[17px] leading-relaxed text-muted-text sm:text-[19px]">
               Check your eligibility for{" "}
@@ -158,7 +158,7 @@ function Index() {
                   key={label}
                   className="flex min-h-24 items-center gap-4 bg-background px-5 py-5"
                 >
-                  <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full border border-brand-red text-[14px] font-bold text-brand-red">
+                  <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full border border-brand-blue text-[14px] font-bold text-brand-blue">
                     {i + 1}
                   </span>
                   <span className="text-[14px] font-medium text-foreground">
