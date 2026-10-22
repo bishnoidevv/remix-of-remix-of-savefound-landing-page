@@ -116,7 +116,7 @@ function Index() {
             <p className="mt-5 max-w-[600px] text-[17px] leading-relaxed text-muted-text sm:text-[19px]">
               Check your eligibility for{" "}
               <span className="font-bold text-brand-red">
-                up to $500 in Burger King savings.
+                up to $100 in Burger King savings.
               </span>
             </p>
             <p className="mt-6 flex items-center gap-2 text-[12px] text-muted-text">
