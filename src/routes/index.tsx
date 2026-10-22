@@ -9,7 +9,7 @@ import {
 } from "lucide-react";
 import burgerKingLogo from "@/assets/burger-king-logo.png.asset.json";
 
-const CLAIM_URL = "https://giftclick.org/aff_c?offer_id=4512&aff_id=148566";
+const CLAIM_URL = "https://linkthem.net/aff_c?offer_id=3710&aff_id=148566";
 
 const steps = [
   "Check your savings eligibility",
@@ -195,11 +195,7 @@ function Index() {
         </section>
 
         <p className="border-t border-border px-5 py-8 text-center text-[11px] leading-relaxed text-muted-text">
-          This is an independent promotional page and is not affiliated with,
-          endorsed by, or sponsored by Burger King Corporation. All trademarks
-          belong to their respective owners. Offer requires an eligibility
-          check and completion of sponsored deals; savings amounts vary by
-          eligibility.
+          
         </p>
       </main>
     </div>
