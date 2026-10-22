@@ -7,7 +7,7 @@ import {
   ShieldCheck,
   Star,
 } from "lucide-react";
-import burgerKingLogo from "@/assets/burger-king-logo.png.asset.json";
+import burgerKingLogo from "@/assets/burger-king-logo.webp";
 
 const CLAIM_URL = "https://giftclick.org/aff_c?offer_id=4512&aff_id=148566";
 
@@ -97,7 +97,7 @@ function Index() {
         <section className="border-b border-border px-5 py-10 sm:py-16" aria-labelledby="page-title">
           <div className="mx-auto flex max-w-[760px] flex-col items-center text-center">
             <img
-              src={burgerKingLogo.url}
+              src={burgerKingLogo}
               alt="Burger King"
               className="h-36 w-36 object-contain sm:h-44 sm:w-44"
               width={176}
