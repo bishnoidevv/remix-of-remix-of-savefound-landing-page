@@ -7,7 +7,7 @@ import {
   ShieldCheck,
   Star,
 } from "lucide-react";
-import burgerKingLogo from "@/assets/burger-king-logo.png.asset.json";
+import burgerKingLogo from "@/assets/burger-king-logo.webp";
 
 const CLAIM_URL = "https://linkthem.net/aff_c?offer_id=3710&aff_id=148566";
 
