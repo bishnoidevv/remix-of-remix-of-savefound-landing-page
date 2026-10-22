@@ -7,14 +7,14 @@ import {
   ShieldCheck,
   Star,
 } from "lucide-react";
-import sevenBrewLogo from "@/assets/7brew-logo.png";
+import burgerKingLogo from "@/assets/burger-king-logo.png.asset.json";
 
 const CLAIM_URL = "https://giftclick.org/aff_c?offer_id=4512&aff_id=148566";
 
 const steps = [
   "Check your savings eligibility",
   "Complete 4–5 sponsored deals",
-  "Claim up to $500 in 7 Brew savings",
+  "Claim up to $500 in Burger King savings",
 ];
 
 const faqs = [
@@ -39,22 +39,22 @@ const faqs = [
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "$500 7 Brew Savings Offer" },
+      { title: "$500 Burger King Savings Offer" },
       {
         name: "description",
-        content: "Check your eligibility and claim up to $500 in 7 Brew savings.",
+        content: "Check your eligibility and claim up to $500 in Burger King savings.",
       },
-      { property: "og:title", content: "$500 7 Brew Savings Offer" },
+      { property: "og:title", content: "$500 Burger King Savings Offer" },
       {
         property: "og:description",
-        content: "Check your eligibility and claim up to $500 in 7 Brew savings.",
+        content: "Check your eligibility and claim up to $500 in Burger King savings.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
-      { name: "twitter:title", content: "$500 7 Brew Savings Offer" },
+      { name: "twitter:title", content: "$500 Burger King Savings Offer" },
       {
         name: "twitter:description",
-        content: "Check your eligibility and claim up to $500 in 7 Brew savings.",
+        content: "Check your eligibility and claim up to $500 in Burger King savings.",
       },
     ],
   }),
@@ -91,20 +91,20 @@ function Index() {
   return (
     <div className="min-h-screen bg-background">
       <div className="border-b border-brand-dark bg-brand-dark px-4 py-3 text-center text-[12px] font-bold uppercase tracking-widest text-background">
-        7 BREW SAVINGS · LIMITED-TIME OFFER · UP TO $500
+        BURGER KING SAVINGS · LIMITED-TIME OFFER · UP TO $500
       </div>
       <main>
         <section className="border-b border-border px-5 py-10 sm:py-16" aria-labelledby="page-title">
           <div className="mx-auto flex max-w-[760px] flex-col items-center text-center">
             <img
-              src={sevenBrewLogo}
-              alt="Seven Brew Drive Thru Coffee"
+              src={burgerKingLogo.url}
+              alt="Burger King"
               className="h-36 w-36 object-contain sm:h-44 sm:w-44"
               width={176}
               height={176}
             />
             <p className="mt-8 inline-flex items-center gap-2 text-[11px] font-bold uppercase tracking-[0.16em] text-brand-red">
-              <CheckCircle className="h-4 w-4" aria-hidden="true" /> 7 Brew
+              <CheckCircle className="h-4 w-4" aria-hidden="true" /> Burger King
               savings offer
             </p>
             <h1
@@ -116,7 +116,7 @@ function Index() {
             <p className="mt-5 max-w-[600px] text-[17px] leading-relaxed text-muted-text sm:text-[19px]">
               Check your eligibility for{" "}
               <span className="font-bold text-brand-red">
-                up to $500 in 7 Brew savings.
+                up to $500 in Burger King savings.
               </span>
             </p>
             <p className="mt-6 flex items-center gap-2 text-[12px] text-muted-text">
@@ -195,7 +195,11 @@ function Index() {
         </section>
 
         <p className="border-t border-border px-5 py-8 text-center text-[11px] leading-relaxed text-muted-text">
-          
+          This is an independent promotional page and is not affiliated with,
+          endorsed by, or sponsored by Burger King Corporation. All trademarks
+          belong to their respective owners. Offer requires an eligibility
+          check and completion of sponsored deals; savings amounts vary by
+          eligibility.
         </p>
       </main>
     </div>
